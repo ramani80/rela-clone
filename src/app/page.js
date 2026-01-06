@@ -531,13 +531,13 @@ export default function RelatimLanding() {
         <Link href="/about">About</Link>
       </li>
       <li>
-        <a href="#contact">Contact</a>
+        <Link href="/contact">Contact</Link>
       </li>
       <li>
-        <a href="#blog">Blog</a>
+        <Link href="/blog">Blog</Link>
       </li>
       <li>
-        <a href="#career">Career</a>
+        <Link href="/career">Career</Link>
       </li>
     </ul>
             
