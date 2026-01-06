@@ -271,6 +271,161 @@ export default function RelatimLanding() {
           height: auto;
         }
 
+        /* Integration Section */
+        .integration-section {
+          background: white;
+          padding: 80px 60px;
+          text-align: center;
+        }
+
+        .integration-heading {
+          font-size: 42px;
+          font-weight: 700;
+          color: #2d3748;
+          margin-bottom: 50px;
+        }
+
+        .brand-logos {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 60px;
+          flex-wrap: wrap;
+          margin-bottom: 60px;
+        }
+
+        .brand-logo-wrapper {
+          width: 120px;
+          height: 80px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 48px;
+          gap: 8px;
+          background: #f7fafc;
+          border-radius: 15px;
+          padding: 15px;
+          transition: transform 0.3s;
+          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .brand-logo-wrapper:hover {
+          transform: scale(1.1);
+        }
+
+        .meet-employees-badge {
+          display: inline-block;
+          background: #f7fafc;
+          border: 2px solid #e2e8f0;
+          padding: 12px 30px;
+          border-radius: 30px;
+          font-size: 16px;
+          font-weight: 600;
+          color: #2d3748;
+          margin-bottom: 30px;
+        }
+
+        .employees-tagline {
+          font-size: 28px;
+          color: #2d3748;
+          font-weight: 600;
+          margin-bottom: 60px;
+        }
+
+        /* AI Employees Cards Section */
+        .employees-section {
+          background: #f7fafc;
+          padding: 60px 40px;
+        }
+
+        .employees-container {
+          max-width: 1400px;
+          margin: 0 auto;
+          display: flex;
+          gap: 30px;
+          overflow-x: auto;
+          scroll-behavior: smooth;
+          padding-bottom: 20px;
+        }
+
+        .employees-container::-webkit-scrollbar {
+          height: 8px;
+        }
+
+        .employees-container::-webkit-scrollbar-track {
+          background: #e2e8f0;
+          border-radius: 10px;
+        }
+
+        .employees-container::-webkit-scrollbar-thumb {
+          background: #667eea;
+          border-radius: 10px;
+        }
+
+        .employee-card {
+          min-width: 380px;
+          background: white;
+          border-radius: 20px;
+          overflow: hidden;
+          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+          transition: transform 0.3s;
+        }
+
+        .employee-card:hover {
+          transform: translateY(-5px);
+        }
+
+        .employee-header {
+          padding: 25px;
+          text-align: center;
+          border-bottom: 2px solid #f7fafc;
+        }
+
+        .employee-title {
+          font-size: 22px;
+          font-weight: 700;
+          color: #2d3748;
+          margin-bottom: 8px;
+        }
+
+        .employee-subtitle {
+          font-size: 14px;
+          color: #718096;
+        }
+
+        .employee-image {
+          width: 100%;
+          height: 280px;
+          object-fit: cover;
+        }
+
+        .employee-features {
+          padding: 25px;
+        }
+
+        .feature-item {
+          display: flex;
+          align-items: flex-start;
+          gap: 12px;
+          margin-bottom: 15px;
+          font-size: 14px;
+          color: #4a5568;
+        }
+
+        .feature-icon {
+          width: 20px;
+          height: 20px;
+          background: #667eea;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: white;
+          font-size: 12px;
+          flex-shrink: 0;
+          margin-top: 2px;
+        }
+
         .chat-widget {
           position: fixed;
           bottom: 30px;
@@ -318,6 +473,10 @@ export default function RelatimLanding() {
           .content-right {
             margin-top: 50px;
           }
+
+          .employee-card {
+            min-width: 320px;
+          }
         }
 
         @media (max-width: 768px) {
@@ -336,6 +495,19 @@ export default function RelatimLanding() {
 
           .cta-buttons {
             flex-direction: column;
+          }
+
+          .integration-heading {
+            font-size: 32px;
+          }
+
+          .brand-logos {
+            gap: 30px;
+          }
+
+          .brand-logo {
+            width: 60px;
+            height: 60px;
           }
         }
       `}</style>
@@ -405,6 +577,136 @@ export default function RelatimLanding() {
             />
           </div>
         </main>
+
+        {/* Integration Section */}
+        <section className="integration-section">
+          <h2 className="integration-heading">Seamlessly Integrates with Your Ecosystem</h2>
+          
+          <div className="brand-logos">
+            <div className="brand-logo-wrapper">🚗 Suzuki</div>
+            <div className="brand-logo-wrapper">🚙 Nissan</div>
+            <div className="brand-logo-wrapper">⭐ Mercedes</div>
+            <div className="brand-logo-wrapper">🔷 BMW</div>
+            <div className="brand-logo-wrapper">🛡️ Volvo</div>
+            <div className="brand-logo-wrapper">🔵 Hyundai</div>
+          </div>
+
+          <div className="meet-employees-badge">Meet Relatim's AI Employees</div>
+          
+          <p className="employees-tagline">
+            Run your automotive business 24/7 — Hire Your First AI Employee Today!
+          </p>
+        </section>
+
+        {/* AI Employees Cards Section */}
+        <section className="employees-section">
+          <div className="employees-container">
+            {/* Insurance Executive Card */}
+            <div className="employee-card">
+              <div className="employee-header">
+                <h3 className="employee-title">Insurance Executive</h3>
+                <p className="employee-subtitle">Sells insurance renewals - 24/7.</p>
+              </div>
+              <img 
+                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=300&fit=crop&q=80" 
+                alt="Insurance Executive" 
+                className="employee-image"
+              />
+              <div className="employee-features">
+                <div className="feature-item">
+                  <span className="feature-icon">✓</span>
+                  <span>Reaches out to all customers, active or inactive</span>
+                </div>
+                <div className="feature-item">
+                  <span className="feature-icon">✓</span>
+                  <span>Works through your entire database</span>
+                </div>
+                <div className="feature-item">
+                  <span className="feature-icon">✓</span>
+                  <span>Sends reminders and follow-ups automatically</span>
+                </div>
+                <div className="feature-item">
+                  <span className="feature-icon">✓</span>
+                  <span>Negotiates and closes renewals</span>
+                </div>
+                <div className="feature-item">
+                  <span className="feature-icon">✓</span>
+                  <span>Handles claims and escalations 24/7</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Service Executive Card */}
+            <div className="employee-card">
+              <div className="employee-header">
+                <h3 className="employee-title">Service Executive</h3>
+                <p className="employee-subtitle">Manages all your service bookings.</p>
+              </div>
+              <img 
+                src="https://images.unsplash.com/photo-1566492031773-4f4e44671857?w=400&h=300&fit=crop&q=80" 
+                alt="Service Executive" 
+                className="employee-image"
+              />
+              <div className="employee-features">
+                <div className="feature-item">
+                  <span className="feature-icon">✓</span>
+                  <span>Connects with every customer consistently</span>
+                </div>
+                <div className="feature-item">
+                  <span className="feature-icon">✓</span>
+                  <span>Keeps reminders compliant with your CRM</span>
+                </div>
+                <div className="feature-item">
+                  <span className="feature-icon">✓</span>
+                  <span>Sends reminders to reduce no-shows</span>
+                </div>
+                <div className="feature-item">
+                  <span className="feature-icon">✓</span>
+                  <span>Books service appointments automatically</span>
+                </div>
+                <div className="feature-item">
+                  <span className="feature-icon">✓</span>
+                  <span>Follows up proactively 24/7</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Sales Executive Card */}
+            <div className="employee-card">
+              <div className="employee-header">
+                <h3 className="employee-title">Sales Executive</h3>
+                <p className="employee-subtitle">Turns enquiries into sales.</p>
+              </div>
+              <img 
+                src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=300&fit=crop&q=80" 
+                alt="Sales Executive" 
+                className="employee-image"
+              />
+              <div className="employee-features">
+                <div className="feature-item">
+                  <span className="feature-icon">✓</span>
+                  <span>Handles customer enquiries 24/7</span>
+                </div>
+                <div className="feature-item">
+                  <span className="feature-icon">✓</span>
+                  <span>Logs and tracks customer requests</span>
+                </div>
+                <div className="feature-item">
+                  <span className="feature-icon">✓</span>
+                  <span>Sends reminders and follow-ups</span>
+                </div>
+                <div className="feature-item">
+                  <span className="feature-icon">✓</span>
+                  <span>Understands customer needs and provides guidance</span>
+                </div>
+                <div className="feature-item">
+                  <span className="feature-icon">✓</span>
+                  <span>Converts enquiries into test drives and sales</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
         <div className="chat-widget">
           <span className="chat-icon">💬</span>
