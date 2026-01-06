@@ -1,6 +1,6 @@
 'use client';
 import React from 'react';
-
+import Link from 'next/link';
 export default function RelatimLanding() {
   return (
     <>
@@ -526,12 +526,20 @@ export default function RelatimLanding() {
           </div>
           
           <nav className="nav">
-            <ul className="nav-links">
-              <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact</a></li>
-              <li><a href="#blog">Blog</a></li>
-              <li><a href="#career">Career</a></li>
-            </ul>
+             <ul className="nav-links">
+      <li>
+        <Link href="/about">About</Link>
+      </li>
+      <li>
+        <a href="#contact">Contact</a>
+      </li>
+      <li>
+        <a href="#blog">Blog</a>
+      </li>
+      <li>
+        <a href="#career">Career</a>
+      </li>
+    </ul>
             
             <div className="nav-buttons">
               <button className="login-btn">
