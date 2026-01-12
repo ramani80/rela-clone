@@ -546,7 +546,11 @@ export default function RelatimLanding() {
                 <span>🔒</span> Login
               </button>
               <button className="signup-btn">Sign Up</button>
-              <button className="book-demo-btn">Book Demo</button>
+              <Link href="/demo">
+      <button className="book-demo-btn">
+        Book Demo
+      </button>
+    </Link>
             </div>
           </nav>
         </header>
