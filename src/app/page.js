@@ -542,9 +542,11 @@ export default function RelatimLanding() {
     </ul>
             
             <div className="nav-buttons">
-              <button className="login-btn">
-                <span>🔒</span> Login
-              </button>
+              <Link href="/login">
+                <button className="login-btn">
+                  <span>🔒</span> Login
+                </button>
+              </Link>
               <Link href="/sign">
                 <button className="signup-btn">Sign Up</button>
               </Link>
